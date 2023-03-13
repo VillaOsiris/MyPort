@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaBars } from "react-icons/fa";
 import { IoClose } from "react-icons/io5";
-import useMediaQuery from "../hooks/mediaHook";
 import styled from "styled-components";
+import useMediaQuery from "../hooks/mediaHook";
 
 function Navbar() {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -99,7 +99,7 @@ const Wrapper = styled.nav`
     bottom: 0;
     z-index: 40;
     height: 100%;
-    width: 60%;
+    width: 70%;
     background: lightgray;
 
     &--icon--wrapper {
