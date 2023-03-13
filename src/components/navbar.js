@@ -65,6 +65,7 @@ function Navbar() {
 const Wrapper = styled.nav`
   position: fixed;
   top: 0;
+  background: white;
   height: 50px;
   width: 100%;
   display: flex;

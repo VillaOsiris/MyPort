@@ -40,8 +40,8 @@ function Hero() {
       <footer>
         <h3>Tech Stack |</h3>
         <div className="image__grid">
-          {imageImports.map((image) => (
-            <img src={image} alt="Image" width="32px" height="32px" />
+          {imageImports.map((image, id) => (
+            <img key={id} src={image} alt="Image" width="32px" height="32px" />
           ))}
         </div>
       </footer>
@@ -107,6 +107,7 @@ const Wrapper = styled.section`
     padding: 5%;
     gap: 2rem;
     font-size: 1.2rem;
+    color: blue;
   }
 
   .image__grid {
