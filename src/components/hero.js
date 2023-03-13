@@ -7,10 +7,10 @@ function Hero() {
   const images = require.context("../assets/logos", false, /\.(svg)$/);
   const keys = images.keys();
   const imageImports = keys.map((key) => images(key));
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const isBelowMediumScreens = useMediaQuery("(max-width: 1060px)");
 
   return (
-    <Wrapper isAboveMediumScreens={isAboveMediumScreens}>
+    <Wrapper isBelowMediumScreens={isBelowMediumScreens} id="home">
       <main>
         <article>
           <h1>Front-end React Developer</h1>
@@ -41,7 +41,7 @@ function Hero() {
         <h3>Tech Stack |</h3>
         <div className="image__grid">
           {imageImports.map((image, id) => (
-            <img key={id} src={image} alt="Image" width="32px" height="32px" />
+            <img key={id} src={image} alt="Image" width="42px" height="42px" />
           ))}
         </div>
       </footer>
@@ -50,33 +50,28 @@ function Hero() {
 }
 
 const Wrapper = styled.section`
-  width: 100%;
+  width: 55%;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  padding: 15% 5px 5%;
-  gap: 4rem;
+  padding-top: 15%;
 
   main {
     display: flex;
-    align-items: center;
-    flex-direction: column-reverse;
-    gap: 2rem;
 
     & > article {
-      width: 90%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       gap: 2rem;
 
       & > h1 {
-        font-size: 3rem;
+        font-size: 4rem;
+        letter-spacing: 1px;
         font-weight: bold;
       }
     }
 
     & > div {
-      width: 90%;
+      width: 50%;
       display: flex;
       justify-content: center;
 
@@ -86,62 +81,55 @@ const Wrapper = styled.section`
       }
     }
   }
-
   .icons {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
     margin-top: 1rem;
 
     &--link {
-      height: 2.2rem;
-      width: 2.2rem;
+      height: 3rem;
+      width: 3rem;
       color: black;
     }
   }
 
   footer {
     display: flex;
-    flex-direction: column;
-    width: 90%;
-    justify-content: center;
-    padding: 5%;
-    gap: 2rem;
-    font-size: 1.2rem;
-    color: blue;
+    gap: 4rem;
+    margin: 8rem 0 15rem;
   }
 
   .image__grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    column-gap: 3rem;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 2.5rem;
+    column-gap: 4rem;
   }
 
-  ${({ isAboveMediumScreens }) =>
-    isAboveMediumScreens &&
+  ${({ isBelowMediumScreens }) =>
+    isBelowMediumScreens &&
     `
-    width: 55%;
+    width: 90%;
 
-    main {
-      flex-direction: row;
-      gap: 0;
-    
-      & > article {
-        width: 50%;
+  main {
+    flex-direction: column;
+
+    & > article {
+      width: 90%;
     }
 
     & > div {
-      width: 50%;
+      width: 90%;
     }
   }
 
   footer {
-    flex-direction: row;
+    flex-direction: column;
 
   }
 
   .image__grid {
-    grid-template-columns: repeat(7, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
 
   `}

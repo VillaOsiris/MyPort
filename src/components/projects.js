@@ -5,12 +5,17 @@ import { MdOpenInNew } from "react-icons/md";
 import htmlLogo from "../assets/logos/logo_a.svg";
 import cssLogo from "../assets/logos/logo_b.svg";
 import jsLogo from "../assets/logos/logo_c.svg";
+import ecommerce from "../assets/ecommerce.png";
+import spa from "../assets/spa.png";
+import portfolio from "../assets/portfolio.png";
+import landing from "../assets/landing.png";
+import product from "../assets/product.png";
 
 function Projects() {
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const isBelowMediumScreens = useMediaQuery("(max-width: 1060px)");
 
   return (
-    <Wrapper isAboveMediumScreens={isAboveMediumScreens}>
+    <Wrapper isBelowMediumScreens={isBelowMediumScreens} id="projects">
       <h2 className="quote">
         "Projects are not just collections of code,
         <br />
@@ -18,8 +23,8 @@ function Projects() {
       </h2>
       <div>
         <article>
-          <h2>Portfolios |</h2>
-          <h1>Project Name</h1>
+          <h3>Portfolios |</h3>
+          <h2>Project Name</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
             assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
@@ -41,72 +46,16 @@ function Projects() {
           </div>
         </article>
         <div>
-          <img src="#" alt="about image" width="100%" height="200px" />
+          <img src={portfolio} alt="about image" width="100%" height="300px" />
         </div>
       </div>
-      <div>
+      <div className="reverse">
         <div>
-          <img src="#" alt="about image" width="100%" height="200px" />
+          <img src={spa} alt="about image" width="100%" height="300px" />
         </div>
         <article>
-          <h2>Single Page Apps |</h2>
-          <h1>Project Name</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
-            cupiditate sed corrupti? Laboriosam neque iusto cum error ullam,
-            architecto qui sunt. Dolores, perspiciatis!
-          </p>
-          <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="20px" height="20px" />
-            <img src={cssLogo} alt="css logo" width="20px" height="20px" />
-            <img src={jsLogo} alt="js logo" width="20px" height="20px" />
-          </div>
-          <div className="icons">
-            <a href="https://github.com/VillaOsiris" target="_blank">
-              CODE <BsGithub className="icons--link" />
-            </a>
-            <a href="https://www.linkedin.com/in/sergiocscosta/">
-              Live Demo <MdOpenInNew className="icons--link" />
-            </a>
-          </div>
-        </article>
-      </div>
-      <div>
-        <article>
-          <h2>Websites |</h2>
-          <h1>Project Name</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
-            cupiditate sed corrupti? Laboriosam neque iusto cum error ullam,
-            architecto qui sunt. Dolores, perspiciatis!
-          </p>
-          <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="20px" height="20px" />
-            <img src={cssLogo} alt="css logo" width="20px" height="20px" />
-            <img src={jsLogo} alt="js logo" width="20px" height="20px" />
-          </div>
-          <div className="icons">
-            <a href="https://github.com/VillaOsiris" target="_blank">
-              CODE <BsGithub className="icons--link" />
-            </a>
-            <a href="https://www.linkedin.com/in/sergiocscosta/">
-              Live Demo <MdOpenInNew className="icons--link" />
-            </a>
-          </div>
-        </article>
-        <div>
-          <img src="#" alt="about image" width="100%" height="200px" />
-        </div>
-      </div>
-      <div>
-        <div>
-          <img src="#" alt="about image" width="100%" height="200px" />
-        </div>
-        <article>
-          <h2>E-Commerces |</h2>
-          <h1>Project Name</h1>
+          <h3>Single Page Apps |</h3>
+          <h2>Project Name</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
             assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
@@ -130,8 +79,8 @@ function Projects() {
       </div>
       <div>
         <article>
-          <h2>Produtcs Landings |</h2>
-          <h1>Project Name</h1>
+          <h3>Websites |</h3>
+          <h2>Project Name</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
             assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
@@ -153,16 +102,72 @@ function Projects() {
           </div>
         </article>
         <div>
-          <img src="#" alt="about image" width="100%" height="200px" />
+          <img src={landing} alt="about image" width="100%" height="300px" />
         </div>
       </div>
-      <div>
+      <div className="reverse">
         <div>
-          <img src="#" alt="about image" width="100%" height="200px" />
+          <img src={ecommerce} alt="about image" width="100%" height="300px" />
         </div>
         <article>
-          <h2>Blog Websites |</h2>
-          <h1>Project Name</h1>
+          <h3>E-Commerces |</h3>
+          <h2>Project Name</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
+            cupiditate sed corrupti? Laboriosam neque iusto cum error ullam,
+            architecto qui sunt. Dolores, perspiciatis!
+          </p>
+          <div className="stack">
+            <img src={htmlLogo} alt="html logo" width="20px" height="20px" />
+            <img src={cssLogo} alt="css logo" width="20px" height="20px" />
+            <img src={jsLogo} alt="js logo" width="20px" height="20px" />
+          </div>
+          <div className="icons">
+            <a href="https://github.com/VillaOsiris" target="_blank">
+              CODE <BsGithub className="icons--link" />
+            </a>
+            <a href="https://www.linkedin.com/in/sergiocscosta/">
+              Live Demo <MdOpenInNew className="icons--link" />
+            </a>
+          </div>
+        </article>
+      </div>
+      <div>
+        <article>
+          <h3>Produtcs Landings |</h3>
+          <h2>Project Name</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
+            assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
+            cupiditate sed corrupti? Laboriosam neque iusto cum error ullam,
+            architecto qui sunt. Dolores, perspiciatis!
+          </p>
+          <div className="stack">
+            <img src={htmlLogo} alt="html logo" width="20px" height="20px" />
+            <img src={cssLogo} alt="css logo" width="20px" height="20px" />
+            <img src={jsLogo} alt="js logo" width="20px" height="20px" />
+          </div>
+          <div className="icons">
+            <a href="https://github.com/VillaOsiris" target="_blank">
+              CODE <BsGithub className="icons--link" />
+            </a>
+            <a href="https://www.linkedin.com/in/sergiocscosta/">
+              Live Demo <MdOpenInNew className="icons--link" />
+            </a>
+          </div>
+        </article>
+        <div>
+          <img src={product} alt="about image" width="100%" height="300px" />
+        </div>
+      </div>
+      <div className="reverse">
+        <div>
+          <img src="#" alt="about image" width="100%" height="300px" />
+        </div>
+        <article>
+          <h3>Blog Websites |</h3>
+          <h2>Project Name</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
             assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
@@ -189,43 +194,38 @@ function Projects() {
 }
 
 const Wrapper = styled.section`
-  width: 100%;
+  width: 55%;
   margin: auto;
   display: flex;
   flex-direction: column;
   gap: 6rem;
-  padding: 4rem 0;
 
   .quote {
-    margin: 4rem 0 0 0;
     color: blue;
     line-height: 1.5;
+    padding-top: 10rem;
+    font-size: 2.2rem;
   }
 
   & > div {
     display: flex;
     align-items: center;
-    flex-direction: column-reverse;
-    gap: 2rem;
+    gap: 10%;
 
     & > article {
-      width: 90%;
+      width: 40%;
       display: flex;
       flex-direction: column;
       gap: 2rem;
 
-      & > h1 {
-        font-size: 2rem;
-        font-weight: bold;
-      }
-
-      & > h2 {
-        color: blue;
+      .stack {
+        display: flex;
+        gap: 1rem;
       }
     }
 
     & > div {
-      width: 90%;
+      width: 50%;
       display: flex;
       justify-content: center;
 
@@ -239,7 +239,7 @@ const Wrapper = styled.section`
   .icons {
     display: flex;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     & > a {
       height: 2rem;
       text-decoration: none;
@@ -259,24 +259,34 @@ const Wrapper = styled.section`
     }
   }
 
-  ${({ isAboveMediumScreens }) =>
-    isAboveMediumScreens &&
+  ${({ isBelowMediumScreens }) =>
+    isBelowMediumScreens &&
     `
-    width: 55%;
+    width: 90%;
+    gap: 6rem;
+    padding-top: 8rem;
 
-    & > div {
-      flex-direction: row;
-      gap: 8rem;
-    
-      & > article {
-        width: 60%;
-    }
 
-    & > div {
-      width: 40%;
-    }
+  .quote {
+   display: none
   }
 
+  & > div {
+    flex-direction: column;
+    gap: 2rem;
+
+    &.reverse{
+      flex-direction: column-reverse;
+    }
+
+    & > article {
+      width: 90%;
+    }
+
+    & > div {
+      width: 90%;
+    }
+  }
   `}
 `;
 

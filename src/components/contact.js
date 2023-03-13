@@ -4,13 +4,12 @@ import { GoLocation, GoMailRead } from "react-icons/go";
 import { BsWhatsapp } from "react-icons/bs";
 
 function Contact() {
-  const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
+  const isBelowMediumScreens = useMediaQuery("(max-width: 1060px)");
 
   return (
-    <Wrapper isAboveMediumScreens={isAboveMediumScreens}>
-      <h1>Let's create great things together!</h1>
-      <h2>contacts |</h2>
-
+    <Wrapper id="contact" isBelowMediumScreens={isBelowMediumScreens}>
+      <h2>Let's create great things together!</h2>
+      <h3>contacts |</h3>
       <ul>
         <li>
           <GoLocation className="icons" /> <span>Barcelona,Spain.</span>
@@ -29,20 +28,12 @@ function Contact() {
 }
 
 const Wrapper = styled.section`
-  width: 100%;
+  width: 55%;
   margin: auto;
-  height: 30vh;
-
-  h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    margin-top: 6rem;
-    margin-bottom: 4rem;
-  }
+  padding: 10rem 0;
 
   h2 {
-    color: blue;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
   }
 
   ul {
@@ -52,7 +43,7 @@ const Wrapper = styled.section`
   }
   li {
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -66,28 +57,23 @@ const Wrapper = styled.section`
     }
   }
   .icons {
-    height: 2.2rem;
-    width: 2.2rem;
+    height: 2rem;
+    width: 2rem;
     color: black;
   }
 
-  ${({ isAboveMediumScreens }) =>
-    isAboveMediumScreens &&
+  ${({ isBelowMediumScreens }) =>
+    isBelowMediumScreens &&
     `
-    width: 55%;
-
-    & > div {
-      flex-direction: row;
-      gap: 8rem;
+    width: 90%;
     
-      & > article {
-        width: 60%;
-    }
-
-    & > div {
-      width: 40%;
-    }
+  ul {
+    flex-direction: column;
+    gap:1rem;
+    margin-top: 2rem;
   }
+   
+  
   `}
 `;
 

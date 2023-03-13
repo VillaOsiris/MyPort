@@ -52,7 +52,7 @@ function Navbar() {
             <a className="nav__modal--link" href="#projects">
               Projects
             </a>
-            <a className="nav__modal--link" href="contact">
+            <a className="nav__modal--link" href="#contact">
               Contact
             </a>
           </ul>
@@ -66,14 +66,14 @@ const Wrapper = styled.nav`
   position: fixed;
   top: 0;
   background: white;
-  height: 50px;
+  height: 60px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10%;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.8rem;
 
   .nav {
     &--list {
