@@ -1,25 +1,26 @@
 import styled from "styled-components";
 import useMediaQuery from "../hooks/mediaHook";
+import aboutImg from "../assets/about.png";
 
 function About() {
   const isBelowMediumScreens = useMediaQuery("(max-width: 1060px)");
 
   return (
-    <Wrapper isBelowMediumScreens={isBelowMediumScreens} id="about">
-      <div>
-        <img src="#" alt="about image" width="100%" height="250px" />
+    <Wrapper isBelowMediumScreens={isBelowMediumScreens}>
+      <div id="about">
+        <img src={aboutImg} alt="about image" width="100%" height="250px" />
       </div>
       <article>
         <h3>About me |</h3>
-        <h2>Fontend Developer</h2>
+        <h2> Mora Than Developer</h2>
         <p>
-          A passioned Frontend Development, including, HTML, CSS/Modern CSS
-          (Sass, Bootstrap, Tailwind and Styledcomponents), Javascript &
-          Typescript, REACT as framework and transitioning to Nextjs, and a bit
-          of MERN stack for backend (Mongo, Express, REST, Nodejs). I’m very
-          familiar with Git/GitHub, SCRUM and JIRA tools. I also have basic know
-          how in Docker, Jest and react-testing, among other features and
-          debugging tools.
+          I'm a poeple person. Everyhting is about building strong relationships
+          and looking for ways to connect. Whether it's through my code,
+          brainstorming sessions, team-building or simply getting to know each
+          other over a cup of coffee!
+          <br /> Passioned for gaming, technology and digital arts. I'm driven
+          by curiosity to understand the different levels of software
+          development.
         </p>
       </article>
     </Wrapper>
@@ -37,6 +38,9 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    & > p {
+      line-height: 1.9rem;
+    }
   }
 
   & > div {

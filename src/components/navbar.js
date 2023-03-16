@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <Wrapper>
-      <div>Portfolio</div>
+      <div>MyPortfolio</div>
       <div className="nav">
         {isAboveMediumScreens ? (
           <ul className="nav--list">
@@ -23,7 +23,7 @@ function Navbar() {
             <a className="nav--link" href="#projects">
               Projects
             </a>
-            <a className="nav--link" href="contact">
+            <a className="nav--link" href="#contact">
               Contact
             </a>
           </ul>

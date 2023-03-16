@@ -7,8 +7,8 @@ function Contact() {
   const isBelowMediumScreens = useMediaQuery("(max-width: 1060px)");
 
   return (
-    <Wrapper id="contact" isBelowMediumScreens={isBelowMediumScreens}>
-      <h2>Let's create great things together!</h2>
+    <Wrapper isBelowMediumScreens={isBelowMediumScreens}>
+      <h2 id="contact">Let's create great things together!</h2>
       <h3>contacts |</h3>
       <ul>
         <li>

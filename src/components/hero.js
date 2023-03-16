@@ -15,9 +15,10 @@ function Hero() {
         <article>
           <h1>Front-end React Developer</h1>
           <p>
-            Hi! I'm Sérgio. Lorem ipsum dolor sit amet consectetur, adipisicing
-            elit. Laboriosam eius reprehenderit consectetur iste odio laudantium
-            excepturi temporibus asperiores, fuga a.{" "}
+            Hi! I'm Sérgio. I make your dreams come true through my code.
+            Specialized in creating and maintaining pixel-perfect applications
+            to deliver the best user experience. <br />
+            Let's talk about how I can help you achieve your goals!
           </p>
           <div className="icons">
             <a href="https://www.linkedin.com/in/sergiocscosta/">
@@ -41,7 +42,7 @@ function Hero() {
         <h3>Tech Stack |</h3>
         <div className="image__grid">
           {imageImports.map((image, id) => (
-            <img key={id} src={image} alt="Image" width="42px" height="42px" />
+            <img key={id} src={image} alt="Image" width="38px" height="38px" />
           ))}
         </div>
       </footer>
@@ -67,6 +68,10 @@ const Wrapper = styled.section`
         font-size: 4rem;
         letter-spacing: 1px;
         font-weight: bold;
+      }
+
+      & > p {
+        line-height: 2rem;
       }
     }
 
@@ -113,6 +118,10 @@ const Wrapper = styled.section`
 
   main {
     flex-direction: column;
+
+        & > h1 {
+        font-size: 3rem;
+      }
 
     & > article {
       width: 90%;

@@ -10,37 +10,156 @@ import spa from "../assets/spa.png";
 import portfolio from "../assets/portfolio.png";
 import landing from "../assets/landing.png";
 import product from "../assets/product.png";
+import soonImg from "../assets/soonImg.jpg";
 
 function Projects() {
   const isBelowMediumScreens = useMediaQuery("(max-width: 1060px)");
 
   return (
-    <Wrapper isBelowMediumScreens={isBelowMediumScreens} id="projects">
-      <h2 className="quote">
+    <Wrapper isBelowMediumScreens={isBelowMediumScreens}>
+      <h2 id="projects" className="quote">
         "Projects are not just collections of code,
         <br />
         but rather manifestations of human creativity and dedication...""
       </h2>
+
+      <div>
+        <article>
+          <h3>E-Commerces |</h3>
+          <h2>Bgamer</h2>
+          <p>
+            E-commerce that involves an online store that specializes in selling
+            video games. User-friendly interface that allows customers to browse
+            and purchase games, sign-in and manage their cart history.
+          </p>
+          <div className="stack">
+            <img src={htmlLogo} alt="html logo" width="30px" height="30px" />
+            <img src={cssLogo} alt="css logo" width="30px" height="30px" />
+            <img src={jsLogo} alt="js logo" width="30px" height="30px" />
+          </div>
+          <div className="icons">
+            <a href="https://github.com/VillaOsiris/Bgamer" target="_blank">
+              CODE <BsGithub className="icons--link" />
+            </a>
+            <a href="https://villaosiris.github.io/Bgamer/" target="_blank">
+              Live Demo <MdOpenInNew className="icons--link" />
+            </a>
+          </div>
+        </article>
+        <div>
+          <img src={ecommerce} alt="about image" width="100%" height="300px" />
+        </div>
+      </div>
+
+      <div className="reverse">
+        <div>
+          <img src={spa} alt="about image" width="100%" height="300px" />
+        </div>
+        <article>
+          <h3>Websites |</h3>
+          <h2>MooV</h2>
+          <p>
+            Responsive movie streaming platform project involves building a
+            website that allows users to watch movies online.Fully responsive
+            with Rest API integration and enhanced user experience.
+          </p>
+          <div className="stack">
+            <img src={htmlLogo} alt="html logo" width="30px" height="30px" />
+            <img src={cssLogo} alt="css logo" width="30px" height="30px" />
+            <img src={jsLogo} alt="js logo" width="30px" height="30px" />
+          </div>
+          <div className="icons">
+            <a href="https://github.com/VillaOsiris/Moov" target="_blank">
+              CODE <BsGithub className="icons--link" />
+            </a>
+            <a href="https://villaosiris.github.io/Moov/" target="_blank">
+              Live Demo <MdOpenInNew className="icons--link" />
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <div>
+        <article>
+          <h3>Websites |</h3>
+          <h2>HealthPoint</h2>
+          <p>
+            Local gym landing page project involves design and development to
+            showcase its facilities, classes, trainers, and membership plans to
+            attract potential customers and increase gym membership.
+          </p>
+          <div className="stack">
+            <img src={htmlLogo} alt="html logo" width="30px" height="30px" />
+            <img src={cssLogo} alt="css logo" width="30px" height="30px" />
+            <img src={jsLogo} alt="js logo" width="30px" height="30px" />
+          </div>
+          <div className="icons">
+            <a
+              href="https://github.com/VillaOsiris/HealthPoint"
+              target="_blank"
+            >
+              CODE <BsGithub className="icons--link" />
+            </a>
+            <a
+              href="https://villaosiris.github.io/HealthPoint/"
+              target="_blank"
+            >
+              Live Demo <MdOpenInNew className="icons--link" />
+            </a>
+          </div>
+        </article>
+        <div>
+          <img src={landing} alt="about image" width="100%" height="300px" />
+        </div>
+      </div>
+
+      <div className="reverse">
+        <div>
+          <img src={product} alt="about image" width="100%" height="300px" />
+        </div>
+        <article>
+          <h3>Single Page Apps |</h3>
+          <h2>BabyBox</h2>
+          <p>
+            Project involves offering a subscription-based service for pregnant
+            women, providing monthly gift boxes containing spa-related items to
+            help them de-stress and feel pampered during their pregnancy.
+          </p>
+          <div className="stack">
+            <img src={htmlLogo} alt="html logo" width="30px" height="30px" />
+            <img src={cssLogo} alt="css logo" width="30px" height="30px" />
+            <img src={jsLogo} alt="js logo" width="30px" height="30px" />
+          </div>
+          <div className="icons">
+            <a href="https://github.com/VillaOsiris/Babybox" target="_blank">
+              CODE <BsGithub className="icons--link" />
+            </a>
+            <a href="#">
+              Live Demo <MdOpenInNew className="icons--link" />
+            </a>
+          </div>
+        </article>
+      </div>
+
       <div>
         <article>
           <h3>Portfolios |</h3>
-          <h2>Project Name</h2>
+          <h2>MyPortfolio</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
-            cupiditate sed corrupti? Laboriosam neque iusto cum error ullam,
-            architecto qui sunt. Dolores, perspiciatis!
+            Portfolio showcase individual's professional work. Simplistic
+            interface with information such as the individual's projects, and
+            contacts to potential employers or clients.
           </p>
           <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="20px" height="20px" />
-            <img src={cssLogo} alt="css logo" width="20px" height="20px" />
-            <img src={jsLogo} alt="js logo" width="20px" height="20px" />
+            <img src={htmlLogo} alt="html logo" width="30px" height="30px" />
+            <img src={cssLogo} alt="css logo" width="30px" height="30px" />
+            <img src={jsLogo} alt="js logo" width="30px" height="30px" />
           </div>
           <div className="icons">
-            <a href="https://github.com/VillaOsiris" target="_blank">
+            <a href="https://github.com/VillaOsiris/Ports" target="_blank">
               CODE <BsGithub className="icons--link" />
             </a>
-            <a href="https://www.linkedin.com/in/sergiocscosta/">
+            <a href="#">
               Live Demo <MdOpenInNew className="icons--link" />
             </a>
           </div>
@@ -51,139 +170,29 @@ function Projects() {
       </div>
       <div className="reverse">
         <div>
-          <img src={spa} alt="about image" width="100%" height="300px" />
+          <img src={soonImg} alt="about image" width="100%" height="300px" />
         </div>
         <article>
-          <h3>Single Page Apps |</h3>
-          <h2>Project Name</h2>
+          <h3>Category |</h3>
+          <h2>Comming Soon</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
-            cupiditate sed corrupti? Laboriosam neque iusto cum error ullam,
-            architecto qui sunt. Dolores, perspiciatis!
+            "Well, what if there is no description? <br /> &nbsp;There wasn't
+            one today."
+            <br />
+            <span style={{ color: "lightgray" }}>
+              &nbsp;Phil Connors, Groundhog Day (1993)
+            </span>
           </p>
           <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="20px" height="20px" />
-            <img src={cssLogo} alt="css logo" width="20px" height="20px" />
-            <img src={jsLogo} alt="js logo" width="20px" height="20px" />
+            <img src={htmlLogo} alt="html logo" width="30px" height="30px" />
+            <img src={cssLogo} alt="css logo" width="30px" height="30px" />
+            <img src={jsLogo} alt="js logo" width="30px" height="30px" />
           </div>
           <div className="icons">
             <a href="https://github.com/VillaOsiris" target="_blank">
               CODE <BsGithub className="icons--link" />
             </a>
-            <a href="https://www.linkedin.com/in/sergiocscosta/">
-              Live Demo <MdOpenInNew className="icons--link" />
-            </a>
-          </div>
-        </article>
-      </div>
-      <div>
-        <article>
-          <h3>Websites |</h3>
-          <h2>Project Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
-            cupiditate sed corrupti? Laboriosam neque iusto cum error ullam,
-            architecto qui sunt. Dolores, perspiciatis!
-          </p>
-          <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="20px" height="20px" />
-            <img src={cssLogo} alt="css logo" width="20px" height="20px" />
-            <img src={jsLogo} alt="js logo" width="20px" height="20px" />
-          </div>
-          <div className="icons">
-            <a href="https://github.com/VillaOsiris" target="_blank">
-              CODE <BsGithub className="icons--link" />
-            </a>
-            <a href="https://www.linkedin.com/in/sergiocscosta/">
-              Live Demo <MdOpenInNew className="icons--link" />
-            </a>
-          </div>
-        </article>
-        <div>
-          <img src={landing} alt="about image" width="100%" height="300px" />
-        </div>
-      </div>
-      <div className="reverse">
-        <div>
-          <img src={ecommerce} alt="about image" width="100%" height="300px" />
-        </div>
-        <article>
-          <h3>E-Commerces |</h3>
-          <h2>Project Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
-            cupiditate sed corrupti? Laboriosam neque iusto cum error ullam,
-            architecto qui sunt. Dolores, perspiciatis!
-          </p>
-          <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="20px" height="20px" />
-            <img src={cssLogo} alt="css logo" width="20px" height="20px" />
-            <img src={jsLogo} alt="js logo" width="20px" height="20px" />
-          </div>
-          <div className="icons">
-            <a href="https://github.com/VillaOsiris" target="_blank">
-              CODE <BsGithub className="icons--link" />
-            </a>
-            <a href="https://www.linkedin.com/in/sergiocscosta/">
-              Live Demo <MdOpenInNew className="icons--link" />
-            </a>
-          </div>
-        </article>
-      </div>
-      <div>
-        <article>
-          <h3>Produtcs Landings |</h3>
-          <h2>Project Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
-            cupiditate sed corrupti? Laboriosam neque iusto cum error ullam,
-            architecto qui sunt. Dolores, perspiciatis!
-          </p>
-          <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="20px" height="20px" />
-            <img src={cssLogo} alt="css logo" width="20px" height="20px" />
-            <img src={jsLogo} alt="js logo" width="20px" height="20px" />
-          </div>
-          <div className="icons">
-            <a href="https://github.com/VillaOsiris" target="_blank">
-              CODE <BsGithub className="icons--link" />
-            </a>
-            <a href="https://www.linkedin.com/in/sergiocscosta/">
-              Live Demo <MdOpenInNew className="icons--link" />
-            </a>
-          </div>
-        </article>
-        <div>
-          <img src={product} alt="about image" width="100%" height="300px" />
-        </div>
-      </div>
-      <div className="reverse">
-        <div>
-          <img src="#" alt="about image" width="100%" height="300px" />
-        </div>
-        <article>
-          <h3>Blog Websites |</h3>
-          <h2>Project Name</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi
-            assumenda dolorem quisquam debitis sapiente! Facilis repudiandae
-            cupiditate sed corrupti? Laboriosam neque iusto cum error ullam,
-            architecto qui sunt. Dolores, perspiciatis!
-          </p>
-          <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="20px" height="20px" />
-            <img src={cssLogo} alt="css logo" width="20px" height="20px" />
-            <img src={jsLogo} alt="js logo" width="20px" height="20px" />
-          </div>
-          <div className="icons">
-            <a href="https://github.com/VillaOsiris" target="_blank">
-              CODE <BsGithub className="icons--link" />
-            </a>
-            <a href="https://www.linkedin.com/in/sergiocscosta/">
+            <a href="#">
               Live Demo <MdOpenInNew className="icons--link" />
             </a>
           </div>
@@ -218,6 +227,10 @@ const Wrapper = styled.section`
       flex-direction: column;
       gap: 2rem;
 
+      & > p {
+        line-height: 2rem;
+      }
+
       .stack {
         display: flex;
         gap: 1rem;
@@ -231,7 +244,8 @@ const Wrapper = styled.section`
 
       & > img {
         border-radius: 10%;
-        border: 3px solid black;
+
+        box-shadow: 0 0 5px 5px lightgray;
       }
     }
   }
@@ -241,7 +255,7 @@ const Wrapper = styled.section`
     gap: 1rem;
     margin-top: 1rem;
     & > a {
-      height: 2rem;
+      height: 3rem;
       text-decoration: none;
       font-weight: 900;
       color: black;
@@ -253,8 +267,8 @@ const Wrapper = styled.section`
     }
 
     &--link {
-      height: 1.5rem;
-      width: 1.5rem;
+      height: 2rem;
+      width: 2rem;
       color: black;
     }
   }
