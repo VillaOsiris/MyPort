@@ -7,8 +7,12 @@ function Contact() {
   const isBelowMediumScreens = useMediaQuery("(max-width: 1060px)");
 
   return (
-    <Wrapper isBelowMediumScreens={isBelowMediumScreens}>
-      <h2 id="contact">Let's create great things together!</h2>
+    <Wrapper
+      isBelowMediumScreens={isBelowMediumScreens}
+      name="contact"
+      id="contact"
+    >
+      <h2>Let's create great things together!</h2>
       <h3>contacts |</h3>
       <ul>
         <li>
@@ -32,15 +36,15 @@ const Wrapper = styled.section`
   margin: auto;
   padding: 15rem 0 10rem;
 
-  h2 {
-    margin-bottom: 3rem;
+  h3 {
+    margin: 4rem 0;
   }
 
   ul {
     display: flex;
     justify-content: space-between;
-    margin-top: 1rem;
   }
+
   li {
     list-style: none;
     font-size: 1.3rem;

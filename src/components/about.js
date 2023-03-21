@@ -6,7 +6,11 @@ function About() {
   const isBelowMediumScreens = useMediaQuery("(max-width: 1060px)");
 
   return (
-    <Wrapper isBelowMediumScreens={isBelowMediumScreens}>
+    <Wrapper
+      isBelowMediumScreens={isBelowMediumScreens}
+      name="about"
+      id="about"
+    >
       <div id="about">
         <img
           src={aboutImg}
@@ -17,14 +21,14 @@ function About() {
       </div>
       <article>
         <h3>About me |</h3>
-        <h2> Mora Than Developer</h2>
+        <h2> More Than a Developer</h2>
         <p>
-          I'm a poeple person. Everyhting is about building strong relationships
-          and looking for ways to connect. Whether it's through my code,
-          brainstorming sessions, team-building or simply getting to know each
-          other over a cup of coffee!
+          I'm a poeples person. To me everyhting is about building strong
+          relationships and looking for ways to connect. Whether it's through my
+          code, brainstorming sessions, meetups and team-building or simply
+          getting to know each other over a cup of coffee!
           <br /> Passioned for gaming, technology and digital arts. I'm driven
-          by curiosity to understand the different levels of software
+          by the curiosity to understand the different levels of software
           development.
         </p>
       </article>
@@ -35,6 +39,7 @@ function About() {
 const Wrapper = styled.section`
   width: 65%;
   margin: auto;
+  padding-top: 15rem;
   display: flex;
   gap: 10%;
 

@@ -2,6 +2,7 @@ import styled from "styled-components";
 import useMediaQuery from "../hooks/mediaHook";
 import hero from "../assets/hero.jpeg";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { FaFileDownload } from "react-icons/fa";
 
 function Hero() {
   const images = require.context(
@@ -14,7 +15,7 @@ function Hero() {
   const isBelowMediumScreens = useMediaQuery("(max-width: 1060px)");
 
   return (
-    <Wrapper isBelowMediumScreens={isBelowMediumScreens} id="home">
+    <Wrapper isBelowMediumScreens={isBelowMediumScreens} name="home" id="home">
       <main>
         <article>
           <h1>Front-end React Developer</h1>
@@ -38,6 +39,12 @@ function Hero() {
               rel="noreferrer"
             >
               <BsGithub className="icons--link" />
+            </a>
+            <a
+              href="https://drive.google.com/uc?export=download&amp;id=17wy2-8JjxLAvVG3lJdz1EnI83icA2W8n"
+              download=""
+            >
+              <FaFileDownload className="icons--link" />
             </a>
           </div>
         </article>
@@ -118,7 +125,7 @@ const Wrapper = styled.section`
   footer {
     display: flex;
     gap: 4rem;
-    margin: 8rem 0 15rem;
+    margin-top: 8rem;
   }
 
   .image__grid {
