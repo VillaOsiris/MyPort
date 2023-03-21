@@ -1,6 +1,6 @@
 {
-  "homepage": "https://VillaOsiris.github.io/Ports",
-  "name": "ports",
+  "homepage": "https://villaosiris.github.io/MyPort",
+  "name": "myport",
   "version": "1.0.0",
   "private": false,
   "dependencies": {
