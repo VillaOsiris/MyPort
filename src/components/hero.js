@@ -4,7 +4,11 @@ import hero from "../assets/hero.jpeg";
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 function Hero() {
-  const images = require.context("../assets/logos", false, /\.(svg)$/);
+  const images = require.context(
+    "../assets/logos/map",
+    false,
+    /logo_[a-zA-Z]\.svg/
+  );
   const keys = images.keys();
   const imageImports = keys.map((key) => images(key));
   const isBelowMediumScreens = useMediaQuery("(max-width: 1060px)");
@@ -21,28 +25,37 @@ function Hero() {
             Let's talk about how I can help you achieve your goals!
           </p>
           <div className="icons">
-            <a href="https://www.linkedin.com/in/sergiocscosta/">
+            <a
+              href="https://www.linkedin.com/in/sergiocscosta/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsLinkedin className="icons--link" />
             </a>
-            <a href="https://github.com/VillaOsiris" target="_blank">
+            <a
+              href="https://github.com/VillaOsiris"
+              target="_blank"
+              rel="noreferrer"
+            >
               <BsGithub className="icons--link" />
             </a>
           </div>
         </article>
         <div>
-          <img
-            src={hero}
-            alt="portfolio owner hero image"
-            width="200px"
-            height="200px"
-          />
+          <img src={hero} alt="portfolio owner" width="200px" height="200px" />
         </div>
       </main>
       <footer>
         <h3>Tech Stack |</h3>
         <div className="image__grid">
           {imageImports.map((image, id) => (
-            <img key={id} src={image} alt="Image" width="38px" height="38px" />
+            <img
+              key={id}
+              src={image}
+              alt="some tech skill"
+              width="38px"
+              height="38px"
+            />
           ))}
         </div>
       </footer>
@@ -51,7 +64,7 @@ function Hero() {
 }
 
 const Wrapper = styled.section`
-  width: 55%;
+  width: 65%;
   margin: auto;
   padding-top: 15%;
 
@@ -71,7 +84,11 @@ const Wrapper = styled.section`
       }
 
       & > p {
-        line-height: 2rem;
+        font-family: "Inconsolata", monospace;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        letter-spacing: 0.6px;
       }
     }
 

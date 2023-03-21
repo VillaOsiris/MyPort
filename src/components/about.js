@@ -8,7 +8,12 @@ function About() {
   return (
     <Wrapper isBelowMediumScreens={isBelowMediumScreens}>
       <div id="about">
-        <img src={aboutImg} alt="about image" width="100%" height="250px" />
+        <img
+          src={aboutImg}
+          alt="developer working on his stand, backview, cartoon"
+          width="100%"
+          height="250px"
+        />
       </div>
       <article>
         <h3>About me |</h3>
@@ -28,23 +33,27 @@ function About() {
 }
 
 const Wrapper = styled.section`
-  width: 55%;
+  width: 65%;
   margin: auto;
   display: flex;
   gap: 10%;
 
   & > article {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     & > p {
-      line-height: 1.9rem;
+      font-family: "Inconsolata", monospace;
+      font-weight: 500;
+      font-size: 1.5rem;
+      line-height: 1.3;
+      letter-spacing: 0.6px;
     }
   }
 
   & > div {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: center;
 

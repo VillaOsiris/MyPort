@@ -28,9 +28,9 @@ function Contact() {
 }
 
 const Wrapper = styled.section`
-  width: 55%;
+  width: 65%;
   margin: auto;
-  padding: 10rem 0;
+  padding: 15rem 0 10rem;
 
   h2 {
     margin-bottom: 3rem;

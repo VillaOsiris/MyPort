@@ -1,16 +1,14 @@
 import styled from "styled-components";
 import useMediaQuery from "../hooks/mediaHook";
-import { BsLinkedin, BsGithub } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
 import { MdOpenInNew } from "react-icons/md";
-import htmlLogo from "../assets/logos/logo_a.svg";
-import cssLogo from "../assets/logos/logo_b.svg";
-import jsLogo from "../assets/logos/logo_c.svg";
 import ecommerce from "../assets/ecommerce.png";
 import spa from "../assets/spa.png";
 import portfolio from "../assets/portfolio.png";
 import landing from "../assets/landing.png";
 import product from "../assets/product.png";
 import soonImg from "../assets/soonImg.jpg";
+import * as logos from "../assets/logos";
 
 function Projects() {
   const isBelowMediumScreens = useMediaQuery("(max-width: 1060px)");
@@ -23,19 +21,44 @@ function Projects() {
         but rather manifestations of human creativity and dedication...""
       </h2>
 
+      {/* PROJECT 1 */}
+
       <div>
         <article>
           <h3>E-Commerces |</h3>
           <h2>Bgamer</h2>
           <p>
-            E-commerce that involves an online store that specializes in selling
-            video games. User-friendly interface that allows customers to browse
-            and purchase games, sign-in and manage their cart history.
+            E-commerce store that specializes in selling video games.
+            User-friendly interface that allows customers to browse and purchase
+            games. Inludes login-in, data sort/filtering and cart history
+            managment features.
           </p>
           <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="30px" height="30px" />
-            <img src={cssLogo} alt="css logo" width="30px" height="30px" />
-            <img src={jsLogo} alt="js logo" width="30px" height="30px" />
+            <img
+              src={logos.htmlLogo}
+              alt="html logo"
+              width="30px"
+              height="30px"
+            />
+            <img
+              src={logos.cssLogo}
+              alt="css logo"
+              width="30px"
+              height="30px"
+            />
+            <img src={logos.jsLogo} alt="js logo" width="30px" height="30px" />
+            <img
+              src={logos.reactLogo}
+              alt="react logo"
+              width="30px"
+              height="30px"
+            />
+            <img
+              src={logos.styledLogo}
+              alt="styled-components logo"
+              width="30px"
+              height="30px"
+            />
           </div>
           <div className="icons">
             <a
@@ -55,26 +78,61 @@ function Projects() {
           </div>
         </article>
         <div>
-          <img src={ecommerce} alt="about image" width="100%" height="300px" />
+          <img
+            src={ecommerce}
+            alt="screenshot of this website"
+            width="100%"
+            height="300px"
+          />
         </div>
       </div>
 
+      {/* PROJECT 2 */}
+
       <div className="reverse">
         <div>
-          <img src={spa} alt="about image" width="100%" height="300px" />
+          <img
+            src={spa}
+            alt="screenshot of this website"
+            width="100%"
+            height="300px"
+          />
         </div>
         <article>
           <h3>Websites |</h3>
           <h2>MooV</h2>
           <p>
-            Responsive movie streaming platform project involves building a
-            website that allows users to watch movies online.Fully responsive
-            with Rest API integration and enhanced user experience.
+            Responsive streaming platform project that allows users to watch
+            movies online. Includes Rest API integration and enhanced user
+            experience.
           </p>
           <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="30px" height="30px" />
-            <img src={cssLogo} alt="css logo" width="30px" height="30px" />
-            <img src={jsLogo} alt="js logo" width="30px" height="30px" />
+            <div className="stack">
+              <img
+                src={logos.htmlLogo}
+                alt="html logo"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src={logos.cssLogo}
+                alt="css logo"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src={logos.jsLogo}
+                alt="js logo"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src={logos.reactLogo}
+                alt="react logo"
+                width="30px"
+                height="30px"
+              />
+            </div>
           </div>
           <div className="icons">
             <a
@@ -95,6 +153,8 @@ function Projects() {
         </article>
       </div>
 
+      {/* PROJECT 3 */}
+
       <div>
         <article>
           <h3>Websites |</h3>
@@ -105,9 +165,38 @@ function Projects() {
             attract potential customers and increase gym membership.
           </p>
           <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="30px" height="30px" />
-            <img src={cssLogo} alt="css logo" width="30px" height="30px" />
-            <img src={jsLogo} alt="js logo" width="30px" height="30px" />
+            <div className="stack">
+              <img
+                src={logos.htmlLogo}
+                alt="html logo"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src={logos.cssLogo}
+                alt="css logo"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src={logos.jsLogo}
+                alt="js logo"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src={logos.reactLogo}
+                alt="react logo"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src={logos.sassLogo}
+                alt="Sass css logo"
+                width="30px"
+                height="30px"
+              />
+            </div>
           </div>
           <div className="icons">
             <a
@@ -127,55 +216,59 @@ function Projects() {
           </div>
         </article>
         <div>
-          <img src={landing} alt="about image" width="100%" height="300px" />
+          <img
+            src={landing}
+            alt="screenshot of this website"
+            width="100%"
+            height="300px"
+          />
         </div>
       </div>
 
+      {/* PROJECT 4 */}
       <div className="reverse">
         <div>
-          <img src={product} alt="about image" width="100%" height="300px" />
+          <img
+            src={portfolio}
+            alt="screenshot of this website"
+            width="100%"
+            height="300px"
+          />
         </div>
         <article>
-          <h3>Single Page Apps |</h3>
-          <h2>BabyBox</h2>
-          <p>
-            Project involves offering a subscription-based service for pregnant
-            women, providing monthly gift boxes containing spa-related items to
-            help them de-stress and feel pampered during their pregnancy.
-          </p>
-          <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="30px" height="30px" />
-            <img src={cssLogo} alt="css logo" width="30px" height="30px" />
-            <img src={jsLogo} alt="js logo" width="30px" height="30px" />
-          </div>
-          <div className="icons">
-            <a
-              href="https://github.com/VillaOsiris/Babybox"
-              target="_blank"
-              rel="noreferrer"
-            >
-              CODE <BsGithub className="icons--link" />
-            </a>
-            <a href="#">
-              Live Demo <MdOpenInNew className="icons--link" />
-            </a>
-          </div>
-        </article>
-      </div>
-
-      <div>
-        <article>
           <h3>Portfolios |</h3>
-          <h2>MyPortfolio</h2>
+          <h2>MyPort</h2>
           <p>
             Portfolio showcase individual's professional work. Simplistic
             interface with information such as the individual's projects, and
             contacts to potential employers or clients.
           </p>
           <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="30px" height="30px" />
-            <img src={cssLogo} alt="css logo" width="30px" height="30px" />
-            <img src={jsLogo} alt="js logo" width="30px" height="30px" />
+            <img
+              src={logos.htmlLogo}
+              alt="html logo"
+              width="30px"
+              height="30px"
+            />
+            <img
+              src={logos.cssLogo}
+              alt="css logo"
+              width="30px"
+              height="30px"
+            />
+            <img src={logos.jsLogo} alt="js logo" width="30px" height="30px" />
+            <img
+              src={logos.reactLogo}
+              alt="reactjs logo"
+              width="30px"
+              height="30px"
+            />
+            <img
+              src={logos.styledLogo}
+              alt="styled-components logo"
+              width="30px"
+              height="30px"
+            />
           </div>
           <div className="icons">
             <a
@@ -185,18 +278,94 @@ function Projects() {
             >
               CODE <BsGithub className="icons--link" />
             </a>
-            <a href="#">
+            <a
+              href="https://villaosiris.github.io/Ports"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Live Demo <MdOpenInNew className="icons--link" />
+            </a>
+          </div>
+        </article>
+      </div>
+
+      {/* PROJECT 5 */}
+
+      <div>
+        <article>
+          <h3>Single Page Apps |</h3>
+          <h2>BabyBox</h2>
+          <p>
+            Project involves offering a subscription-based service for pregnant
+            women, providing monthly gift boxes containing spa-related items to
+            help them de-stress and feel pampered during their pregnancy.
+          </p>
+          <div className="stack">
+            <div className="stack">
+              <img
+                src={logos.htmlLogo}
+                alt="html logo"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src={logos.cssLogo}
+                alt="css logo"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src={logos.tsLogo}
+                alt="js logo"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src={logos.nextLogo}
+                alt="nextjs logo"
+                width="30px"
+                height="30px"
+              />
+              <img
+                src={logos.tailwindLogo}
+                alt="tailwind css logo"
+                width="30px"
+                height="30px"
+              />
+            </div>
+          </div>
+          <div className="icons">
+            <a
+              href="https://github.com/VillaOsiris/Babybox"
+              target="_blank"
+              rel="noreferrer"
+            >
+              CODE <BsGithub className="icons--link" />
+            </a>
+            <a
+              href="https://villaosiris.github.io/babybox"
+              target="_blank"
+              rel="noreferrer"
+            >
               Live Demo <MdOpenInNew className="icons--link" />
             </a>
           </div>
         </article>
         <div>
-          <img src={portfolio} alt="about image" width="100%" height="300px" />
+          <img
+            src={product}
+            alt="screenshot of this website"
+            width="100%"
+            height="300px"
+          />
         </div>
       </div>
+
+      {/* PROJECT 6 */}
+
       <div className="reverse">
         <div>
-          <img src={soonImg} alt="about image" width="100%" height="300px" />
+          <img src={soonImg} alt="comming soon" width="100%" height="300px" />
         </div>
         <article>
           <h3>Category |</h3>
@@ -210,9 +379,19 @@ function Projects() {
             </span>
           </p>
           <div className="stack">
-            <img src={htmlLogo} alt="html logo" width="30px" height="30px" />
-            <img src={cssLogo} alt="css logo" width="30px" height="30px" />
-            <img src={jsLogo} alt="js logo" width="30px" height="30px" />
+            <img
+              src={logos.htmlLogo}
+              alt="html logo"
+              width="30px"
+              height="30px"
+            />
+            <img
+              src={logos.cssLogo}
+              alt="css logo"
+              width="30px"
+              height="30px"
+            />
+            <img src={logos.jsLogo} alt="js logo" width="30px" height="30px" />
           </div>
           <div className="icons">
             <a
@@ -222,18 +401,20 @@ function Projects() {
             >
               CODE <BsGithub className="icons--link" />
             </a>
-            <a href="#">
+            <a href="/" target="_blank" rel="noreferrer">
               Live Demo <MdOpenInNew className="icons--link" />
             </a>
           </div>
         </article>
       </div>
+
+      {/* PROJECT 7 */}
     </Wrapper>
   );
 }
 
 const Wrapper = styled.section`
-  width: 55%;
+  width: 65%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -258,7 +439,11 @@ const Wrapper = styled.section`
       gap: 2rem;
 
       & > p {
-        line-height: 2rem;
+        font-family: "Inconsolata", monospace;
+        font-weight: 500;
+        font-size: 1.5rem;
+        line-height: 1.3;
+        letter-spacing: 0.6px;
       }
 
       .stack {
