@@ -38,10 +38,18 @@ function Projects() {
             <img src={jsLogo} alt="js logo" width="30px" height="30px" />
           </div>
           <div className="icons">
-            <a href="https://github.com/VillaOsiris/Bgamer" target="_blank">
+            <a
+              href="https://github.com/VillaOsiris/Bgamer"
+              target="_blank"
+              rel="noreferrer"
+            >
               CODE <BsGithub className="icons--link" />
             </a>
-            <a href="https://villaosiris.github.io/Bgamer/" target="_blank">
+            <a
+              href="https://villaosiris.github.io/Bgamer/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Live Demo <MdOpenInNew className="icons--link" />
             </a>
           </div>
@@ -69,10 +77,18 @@ function Projects() {
             <img src={jsLogo} alt="js logo" width="30px" height="30px" />
           </div>
           <div className="icons">
-            <a href="https://github.com/VillaOsiris/Moov" target="_blank">
+            <a
+              href="https://github.com/VillaOsiris/Moov"
+              target="_blank"
+              rel="noreferrer"
+            >
               CODE <BsGithub className="icons--link" />
             </a>
-            <a href="https://villaosiris.github.io/Moov/" target="_blank">
+            <a
+              href="https://villaosiris.github.io/Moov/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Live Demo <MdOpenInNew className="icons--link" />
             </a>
           </div>
@@ -97,12 +113,14 @@ function Projects() {
             <a
               href="https://github.com/VillaOsiris/HealthPoint"
               target="_blank"
+              rel="noreferrer"
             >
               CODE <BsGithub className="icons--link" />
             </a>
             <a
               href="https://villaosiris.github.io/HealthPoint/"
               target="_blank"
+              rel="noreferrer"
             >
               Live Demo <MdOpenInNew className="icons--link" />
             </a>
@@ -131,7 +149,11 @@ function Projects() {
             <img src={jsLogo} alt="js logo" width="30px" height="30px" />
           </div>
           <div className="icons">
-            <a href="https://github.com/VillaOsiris/Babybox" target="_blank">
+            <a
+              href="https://github.com/VillaOsiris/Babybox"
+              target="_blank"
+              rel="noreferrer"
+            >
               CODE <BsGithub className="icons--link" />
             </a>
             <a href="#">
@@ -156,7 +178,11 @@ function Projects() {
             <img src={jsLogo} alt="js logo" width="30px" height="30px" />
           </div>
           <div className="icons">
-            <a href="https://github.com/VillaOsiris/Ports" target="_blank">
+            <a
+              href="https://github.com/VillaOsiris/Ports"
+              target="_blank"
+              rel="noreferrer"
+            >
               CODE <BsGithub className="icons--link" />
             </a>
             <a href="#">
@@ -189,7 +215,11 @@ function Projects() {
             <img src={jsLogo} alt="js logo" width="30px" height="30px" />
           </div>
           <div className="icons">
-            <a href="https://github.com/VillaOsiris" target="_blank">
+            <a
+              href="https://github.com/VillaOsiris"
+              target="_blank"
+              rel="noreferrer"
+            >
               CODE <BsGithub className="icons--link" />
             </a>
             <a href="#">
