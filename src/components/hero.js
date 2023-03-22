@@ -21,8 +21,8 @@ function Hero() {
           <h1>Front-end React Developer</h1>
           <p>
             Hi! I'm Sérgio. I make your dreams come true through my code.
-            Specialized in creating and maintaining pixel-perfect applications
-            to deliver the best user experience. <br />
+            Specialized in creation and maintenance of pixel-perfect
+            applications to deliver the best user experience. <br />
             Let's talk about how I can help you achieve your goals!
           </p>
           <div className="icons">

@@ -35,7 +35,8 @@ function Projects() {
           <p>
             This is my playground! Where I tell my story and my share my dreams.
             It's not perfect and it's not meant to be! Built to showcase and
-            test features. So I hope your up for a Story...
+            test features. So if your up for a story and wanna learn more about
+            me, check it out!
           </p>
           <div className="stack">
             <div className="stack">
@@ -115,7 +116,7 @@ function Projects() {
           <p>
             E-commerce store that specializes in selling video games.
             User-friendly interface that allows customers to browse and purchase
-            games. Inludes login-in, data sort/filtering and cart history
+            games. Includes login-in, data sort/filtering and cart history
             managment features.
           </p>
           <div className="stack">
@@ -301,7 +302,7 @@ function Projects() {
           <h3>Portfolio |</h3>
           <h2>MyPort</h2>
           <p>
-            Portfolio showcase individual's professional work. Simplistic
+            Portfolio showcasing individual's professional work. Simplistic
             interface with information such as the individual's projects, and
             contacts to potential employers or clients.
           </p>

@@ -23,13 +23,13 @@ function About() {
         <h3>About me |</h3>
         <h2> More Than a Developer</h2>
         <p>
-          I'm a poeples person. To me everyhting is about building strong
-          relationships and looking for ways to connect. Whether it's through my
-          code, brainstorming sessions, meetups and team-building or simply
+          I'm a poeple person. To me everything is about building strong
+          relations and looking for ways to connect. Whether it's through my
+          code, meetups, brainstorming sessions and team-building, or simply
           getting to know each other over a cup of coffee!
           <br /> Passioned for gaming, technology and digital arts. I'm driven
           by the curiosity to understand the different levels of software
-          development.
+          development and new tech.
         </p>
       </article>
     </Wrapper>
