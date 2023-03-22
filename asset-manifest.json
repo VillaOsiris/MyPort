@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/MyPort/static/css/main.8b5ccafd.css",
-    "main.js": "/MyPort/static/js/main.47b6743d.js",
+    "main.js": "/MyPort/static/js/main.15c8664f.js",
     "static/media/faneca.png": "/MyPort/static/media/faneca.6a0c7ebb521004be06e5.png",
     "static/media/landing.png": "/MyPort/static/media/landing.66243e344d9c50f73112.png",
     "static/media/ecommerce.png": "/MyPort/static/media/ecommerce.982ee89435f73deaddfe.png",
     "static/media/spa.png": "/MyPort/static/media/spa.e1b391f22ac039200208.png",
     "static/media/portfolio.png": "/MyPort/static/media/portfolio.ecd99b426bec4c53f9af.png",
-    "static/media/product.png": "/MyPort/static/media/product.ecad67798170f6251b32.png",
     "static/media/about.png": "/MyPort/static/media/about.b5cef9caea36deba89e7.png",
+    "static/media/product.png": "/MyPort/static/media/product.99d354fb7938ffc1823d.png",
     "static/media/soonImg.jpg": "/MyPort/static/media/soonImg.06f08c5a4a6e8eedd507.jpg",
     "static/media/styled.png": "/MyPort/static/media/styled.fedb29267dd012426021.png",
     "static/media/hero.jpeg": "/MyPort/static/media/hero.f9399987edea86db8f98.jpeg",
@@ -36,10 +36,10 @@
     "static/media/next.svg": "/MyPort/static/media/next.c816fd48acbdf1011952419a36bafefc.svg",
     "static/media/logo_i.svg": "/MyPort/static/media/logo_i.17fe1720dcc66b60fc1a.svg",
     "main.8b5ccafd.css.map": "/MyPort/static/css/main.8b5ccafd.css.map",
-    "main.47b6743d.js.map": "/MyPort/static/js/main.47b6743d.js.map"
+    "main.15c8664f.js.map": "/MyPort/static/js/main.15c8664f.js.map"
   },
   "entrypoints": [
     "static/css/main.8b5ccafd.css",
-    "static/js/main.47b6743d.js"
+    "static/js/main.15c8664f.js"
   ]
 }
