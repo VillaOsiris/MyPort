@@ -442,8 +442,8 @@ function Projects() {
             "Well, what if there is no description? <br /> &nbsp;There wasn't
             one today."
             <br />
-            <span style={{ color: "lightgray" }}>
-              &nbsp;Phil Connors, Groundhog Day (1993)
+            <span style={{ color: "gray" }}>
+              &nbsp;- Phil Connors, Groundhog Day (1993)
             </span>
           </p>
           <div className="stack">
@@ -466,11 +466,25 @@ function Projects() {
               href="https://github.com/VillaOsiris"
               target="_blank"
               rel="noreferrer"
+              style={{ color: "lightgray" }}
             >
-              CODE <BsGithub className="icons--link" />
+              CODE{" "}
+              <BsGithub
+                className="icons--link"
+                style={{ color: "lightgray" }}
+              />
             </a>
-            <a href="/" target="_blank" rel="noreferrer">
-              Live Demo <MdOpenInNew className="icons--link" />
+            <a
+              href="/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "lightgray" }}
+            >
+              Live Demo{" "}
+              <MdOpenInNew
+                className="icons--link"
+                style={{ color: "lightgray" }}
+              />
             </a>
           </div>
         </article>
