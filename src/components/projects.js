@@ -2,13 +2,7 @@ import styled from "styled-components";
 import useMediaQuery from "../hooks/mediaHook";
 import { BsGithub } from "react-icons/bs";
 import { MdOpenInNew } from "react-icons/md";
-import faneca from "../assets/faneca.png";
-import ecommerce from "../assets/ecommerce.png";
-import spa from "../assets/spa.png";
-import portfolio from "../assets/portfolio.png";
-import landing from "../assets/landing.png";
-import product from "../assets/product.png";
-import soonImg from "../assets/soonImg.jpg";
+import * as heros from "../assets/heros";
 import * as logos from "../assets/logos";
 
 function Projects() {
@@ -91,7 +85,7 @@ function Projects() {
         </article>
         <div>
           <img
-            src={faneca}
+            src={heros.faneca}
             alt="screenshot of this website"
             width="100%"
             height="300px"
@@ -104,7 +98,7 @@ function Projects() {
       <div className="reverse">
         <div>
           <img
-            src={ecommerce}
+            src={heros.bgamer}
             alt="screenshot of this website"
             width="100%"
             height="300px"
@@ -216,7 +210,7 @@ function Projects() {
         </article>
         <div>
           <img
-            src={spa}
+            src={heros.moov}
             alt="screenshot of this website"
             width="100%"
             height="300px"
@@ -229,7 +223,7 @@ function Projects() {
       <div className="reverse">
         <div>
           <img
-            src={landing}
+            src={heros.heathpoint}
             alt="screenshot of this website"
             width="100%"
             height="300px"
@@ -352,7 +346,7 @@ function Projects() {
         </article>
         <div>
           <img
-            src={portfolio}
+            src={heros.myport}
             alt="screenshot of this website"
             width="100%"
             height="300px"
@@ -365,7 +359,7 @@ function Projects() {
       <div className="reverse">
         <div>
           <img
-            src={product}
+            src={heros.babybox}
             alt="screenshot of this website"
             width="100%"
             height="300px"
@@ -436,6 +430,83 @@ function Projects() {
 
       <div>
         <article>
+          <h3>Website |</h3>
+          <h2>Vitesse Automotive</h2>
+          <p>
+            Creation and Deployment of website for brand of high-performance
+            sports cars! More about it later...
+          </p>
+          <div className="stack">
+            <img
+              src={logos.htmlLogo}
+              alt="html logo"
+              width="30px"
+              height="30px"
+            />
+            <img
+              src={logos.cssLogo}
+              alt="css logo"
+              width="30px"
+              height="30px"
+            />
+            <img src={logos.tsLogo} alt="ts logo" width="30px" height="30px" />
+            <img
+              src={logos.nextLogo}
+              alt="nextjs logo"
+              width="30px"
+              height="30px"
+            />
+            <img
+              src={logos.tailwindLogo}
+              alt="tailwind css logo"
+              width="30px"
+              height="30px"
+            />
+          </div>
+          <div className="icons">
+            <a
+              href="https://github.com/VillaOsiris/Vitesse"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "lightgray" }}
+            >
+              CODE{" "}
+              <BsGithub
+                className="icons--link"
+                style={{ color: "lightgray" }}
+              />
+            </a>
+            <a
+              href="/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "lightgray" }}
+            >
+              Live Demo{" "}
+              <MdOpenInNew
+                className="icons--link"
+                style={{ color: "lightgray" }}
+              />
+            </a>
+          </div>
+        </article>
+        <div>
+          <img src={heros.vit} alt="comming soon" width="100%" height="300px" />
+        </div>
+      </div>
+
+      {/* PROJECT 8 */}
+
+      <div className="reverse">
+        <div>
+          <img
+            src={heros.soon}
+            alt="comming soon"
+            width="100%"
+            height="300px"
+          />
+        </div>
+        <article>
           <h3>E-Commerce |</h3>
           <h2>Comming Soon</h2>
           <p>
@@ -488,12 +559,7 @@ function Projects() {
             </a>
           </div>
         </article>
-        <div>
-          <img src={soonImg} alt="comming soon" width="100%" height="300px" />
-        </div>
       </div>
-
-      {/* PROJECT 8 */}
     </Wrapper>
   );
 }
